@@ -15,7 +15,6 @@ import java.util.Optional;
 @ApplicationScoped
 public abstract class BaseDAO<E> {
     private final Class<E> entityClass;
-
     @Inject
     protected EntityManager em;
 

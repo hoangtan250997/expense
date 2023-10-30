@@ -3,14 +3,13 @@ package org.mocha.entity;
 import jakarta.persistence.*;
 
 @Entity
-public class Expense {
+public class HoangUser {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-
+    @GeneratedValue
+    private int id;
 
     @Column
     private String name;
 
-
 }
+

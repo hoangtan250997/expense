@@ -1,0 +1,2 @@
+insert into uzer (id, name, username, password, roles) values (1,'Patrick Meier','Patrick','password','ROLE_ADMIN');
+insert into uzer (id, name, username, password, roles) values (2,'Werner Stäger','Werner','password','ROLE_USER');

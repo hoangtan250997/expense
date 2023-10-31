@@ -23,8 +23,12 @@ public abstract class BaseDAO<E> {
         em.persist(entity);
         return entity;
     }
-
-    public Optional<E> findById(Long id) {
+    public E udpate(E entity) {
+        em.merge(entity);
+        em.flush();
+        return entity;
+    }
+    public Optional<E> findById(int id) {
         return Optional.ofNullable(em.find(entityClass, id));
     }
 
